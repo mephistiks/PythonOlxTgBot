@@ -18,6 +18,7 @@ import motor.motor_asyncio
 from trans import ru, uz, get_trans
 import trans
 
+
 API_TOKEN = 'PUT UR TOKER HERE'  # test 1
 
 # Configure logging
