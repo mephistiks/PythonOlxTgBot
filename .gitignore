@@ -1,7 +1,11 @@
 #my
 mongodata/
 parse/
-
+tg/.idea
+tg/venv
+parse/.idea
+parse/__pycache__
+parse/venv
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
