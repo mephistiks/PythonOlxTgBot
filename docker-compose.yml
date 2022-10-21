@@ -1,0 +1,24 @@
+version: '3'
+
+services:
+  mongodb:
+    build: .
+    hostname: mongodb
+    restart: always
+    environment:
+      - PUID=1000
+      - PGID=1000
+      - MONGO_INITDB_ROOT_USERNAME=mongo
+      - MONGO_INITDB_ROOT_PASSWORD=mongo
+    volumes:
+      - ./mongodata:/data/db
+    ports:
+      - 27002:27017
+
+  redis:
+    image: redis:latest
+    restart: always
+    ports:
+      - 6379:6379
+
+
